@@ -4,7 +4,6 @@ import com.villalbapablo.reply.R
 import com.villalbapablo.reply.data.Email
 import com.villalbapablo.reply.data.MailboxType
 
-
 object LocalEmailsDataProvider {
 
     val allEmails = listOf(
@@ -109,9 +108,6 @@ object LocalEmailsDataProvider {
         )
     )
 
-    /**
-     * Get an [Email] with the given [id].
-     */
     fun get(id: Long): Email? {
         return allEmails.firstOrNull { it.id == id }
     }
